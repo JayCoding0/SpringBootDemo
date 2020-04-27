@@ -9,8 +9,13 @@ public class ThreadLocalTest {
 
     public static void main(String[] args) {
         ThreadLocal<String> local = new ThreadLocal<>();
+        ThreadLocal<String> local1 = new ThreadLocal<>();
+
         local.set("test");
+        local1.set("test1");
         String s = local.get();
-        System.out.println(s);
+        String s1 = local1.get();
+
+        System.out.println(s+"---"+s1);
     }
 }
