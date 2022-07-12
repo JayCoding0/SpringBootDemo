@@ -27,7 +27,7 @@ public class Demo {
     private final static Logger logger = LoggerFactory.getLogger(Demo.class);
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(cron = " 0/1 * * * * ? ")
+   // @Scheduled(cron = " 0/1 * * * * ? ")
     @Log(operationType = "测试", operationName = "zn-test")
     public String timePlan() {
         //        logger.info("这是一个测试用例");
